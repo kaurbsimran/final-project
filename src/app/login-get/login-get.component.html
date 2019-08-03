@@ -1,0 +1,42 @@
+
+<div class="col-lg-4">
+    <table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Email</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let obj of arr">
+            <!-- <th scope="row">1</th> -->
+            <td>{{obj.firstname}}</td>
+            <td>{{obj.lastname}}</td>
+            <td>{{obj.phone}}</td>
+            <td>{{obj.email}}</td>
+            <td><button type="submit" [routerLink]="['/update',obj._id]">Update</button></td>
+            <td><button type="submit" (click)="delData(obj._id)">Delete</button></td>
+        </tr>
+    </tbody>
+    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 17rem;" *ngFor=" let obj of arr">
+                    <img src="../../assets/image/darkchoco/dark3.jpg" class="card-img-top" height="250px" alt="...">
+                    <div class="card-body text">
+                        <h5 class="card-title"scope="col"  >Fisrt Name:{{obj.firstname}}</h5>
+                        <h5 class="card-title"scope="col"  >Last Name:{{obj.lastname}}</h5>
+                        <h5 class="card-title"scope="col"  >Phone Number:{{obj.phone}}</h5>
+                        <h5 class="card-title"scope="col"  >Email:{{obj.email}}</h5>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>

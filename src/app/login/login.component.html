@@ -1,0 +1,81 @@
+<div class="text-center" style="font-size: 1.5rem;">
+    <img src="../../assets/image/membership.jpg">
+    <p>New to our site???</p>
+    <p>Sign In for Membership and get further more benefits.</p>
+    <button type="button" class="btn btn-info shadow-lg p-3 mb-5  " data-toggle="modal" data-target="#exampleModalCenter" style="border-radius: 20%;">
+            Sign Up 
+        </button>
+          
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Sign Up Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <form>
+                                <div class="form-group">
+                                    <label>First name</label>
+                                    <input type="name" class="form-control" [(ngModel)]="firstname" name="firstname"  placeholder="Enter your First name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last name</label>
+                                    <input type="name" class="form-control" [(ngModel)]="lastname" name="lastname"  placeholder="Enter your Last name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="number" class="form-control" [(ngModel)]="phone" name="phone"  placeholder="Enter your Phone number">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email address</label>
+                                    <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Enter your Email">
+                                </div>
+                                <button type="submit" class="btn btn-primary" (click)="addData()">Submit</button>
+                            </form>
+                        </div>
+                     </div>
+                </div>
+            </div>
+    </div>
+    
+    <p>Already a member?</p>
+    <p>Then login </p>
+    <button type="button" class="btn btn-info shadow-lg p-3 mb-5  " data-toggle="modal" data-target="#exampleModalCenter" style="border-radius: 20%;">
+        Login 
+    </button>
+      
+<!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Log In Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form>
+                            <div class="form-group">
+                                <label>Id</label>
+                                <input type="email" class="form-control" name="id" placeholder="Enter your Id">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="string" class="form-control" name="password" placeholder="Enter your Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                 </div>
+            </div>
+        </div>
+</div>
+<br>
+</div>
